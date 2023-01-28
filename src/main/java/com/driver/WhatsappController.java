@@ -27,6 +27,9 @@ public class WhatsappController {
         //If the mobile number exists in database, throw "User already exists" exception
         //Otherwise, create the user and return "SUCCESS"
 
+        if(whatsappService.isNewUser(mobile)){
+            throw new Exception("User already exists");
+        }
         return whatsappService.createUser(name, mobile);
     }
 
@@ -70,6 +73,9 @@ public class WhatsappController {
         return whatsappService.changeAdmin(approver, user, group);
     }
 
+
+
+     /*
     @DeleteMapping("/remove-user")
     public int removeUser(User user) throws Exception{
         //This is a bonus problem and does not contains any marks
@@ -90,4 +96,6 @@ public class WhatsappController {
 
         return whatsappService.findMessage(start, end, K);
     }
+
+      */
 }
