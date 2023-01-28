@@ -13,8 +13,12 @@ public class WhatsappRepository {
     private HashMap<Group, List<Message>> groupMessageMap;
     private HashMap<Message, User> senderMap;
     private HashMap<Group, User> adminMap;
+<<<<<<< HEAD
     private HashMap<String,User> userData;
 
+=======
+    private HashSet<String> userMobile;
+>>>>>>> d70462eeb2fb797824091e0bf35464a061442e08
     private int customGroupCount;
     private int messageId;
 
@@ -23,6 +27,7 @@ public class WhatsappRepository {
         this.groupUserMap = new HashMap<Group, List<User>>();
         this.senderMap = new HashMap<Message, User>();
         this.adminMap = new HashMap<Group, User>();
+<<<<<<< HEAD
         this.userData = new HashMap<>();
         this.customGroupCount = 0;
         this.messageId = 0;
@@ -92,4 +97,10 @@ public class WhatsappRepository {
         adminMap.put(group,user);
         return "SUCCESS";
     }
+=======
+        this.userMobile = new HashSet<>();
+        this.customGroupCount = 0;
+        this.messageId = 0;
+    }
+>>>>>>> d70462eeb2fb797824091e0bf35464a061442e08
 }

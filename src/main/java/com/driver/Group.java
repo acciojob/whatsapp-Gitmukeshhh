@@ -4,6 +4,7 @@ public class Group {
     private String name;
     private int numberOfParticipants;
 
+<<<<<<< HEAD
     public Group(String name, int numberOfParticipants) {
         this.name = name;
         this.numberOfParticipants = numberOfParticipants;
@@ -24,4 +25,6 @@ public class Group {
     public void setNumberOfParticipants(int numberOfParticipants) {
         this.numberOfParticipants = numberOfParticipants;
     }
+=======
+>>>>>>> d70462eeb2fb797824091e0bf35464a061442e08
 }

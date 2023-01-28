@@ -7,6 +7,7 @@ public class Message {
     private String content;
     private Date timestamp;
 
+<<<<<<< HEAD
     public Message(int id, String content, Date timestamp) {
         this.id = id;
         this.content = content;
@@ -36,4 +37,6 @@ public class Message {
     public void setTimestamp(Date timestamp) {
         this.timestamp = timestamp;
     }
+=======
+>>>>>>> d70462eeb2fb797824091e0bf35464a061442e08
 }
